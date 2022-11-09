@@ -157,7 +157,7 @@ function testTime() {
     };
 
 
-    // time7 3M
+    // time7 3PM
     time7 = moment().startOf('day').add(15, "hours");
     // Add time7 if/else
     if (currentTime.isAfter(time7)) {
@@ -200,6 +200,9 @@ function testTime() {
 
 
 }
+
+
+
 testTime();
 // Loops through input area to get item from local storage
 var x = [9, 10, 11, 12, 1, 2, 3, 4, 5];
@@ -209,6 +212,8 @@ for (var i = 0; i < x.length; i++) {
     // form - control
     $(".form" + x[i]).val(dataHour);
 }
+
+
 
 // Event listener to save to local stroage
 $(".saveBtn").click(function () {
